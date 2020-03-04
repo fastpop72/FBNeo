@@ -13108,12 +13108,12 @@ void __fastcall RockclimZ80Write(UINT16 a, UINT8 d)
 		}
 		
 		case 0xb006: {
-			GalFlipScreenX = d & 1;
+			GalFlipScreenX = 0;		//d & 1;	flipscreen off
 			return;
 		}
 		
 		case 0xb007: {
-			GalFlipScreenY = d & 1;
+			GalFlipScreenY = 0;		//d & 1;	flipscreen off
 			return;
 		}
 		
